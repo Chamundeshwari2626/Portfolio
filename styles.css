@@ -1,0 +1,162 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #1d1f21; /* Dark Charcoal */
+    color: #fff;
+    line-height: 1.6;
+    font-size: 16px;
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Header */
+header {
+    background-color: #00bfae; /* Teal */
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #d1d1d1; /* Light Gray */
+    margin-bottom: 30px;
+}
+
+/* Navigation */
+nav {
+    background-color: #333; /* Dark Charcoal */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1d1f21;
+    background-color: #00bfae; /* Teal */
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #00bfae; /* Teal */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Bullet Points - Skills & Projects */
+section ul {
+    list-style-type: disc;
+    list-style-position: inside; /* Bullets closer to the text */
+    padding-left: 0; /* Remove extra padding on the left */
+    text-align: left; /* Align text to the left */
+    margin: 0 auto; /* Center-align the list */
+    max-width: 600px; /* Limit the width for readability */
+}
+
+section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px; /* Add space between items */
+}
+
+/* Section Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark Charcoal */
+    text-align: center;
+    padding: 20px;
+    color: #d1d1d1; /* Light Gray */
+    margin-top: 30px;
+}
+
+/* Contact Section */
+section#contact a {
+    color: #00bfae; /* Teal */
+}
+
+section#contact a:hover {
+    color: #fff;
+}
+
+/* Buttons */
+button {
+    background-color: #00bfae; /* Teal */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #007f70;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section ul {
+        max-width: 100%; /* Full width on small screens */
+        padding-left: 20px; /* Add slight padding for smaller screens */
+    }
+}
